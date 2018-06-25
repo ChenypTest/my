@@ -1,14 +1,48 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>唐诗一首</title>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:red;
+animation:myfirst 5s;
+-moz-animation:myfirst 5s; /* Firefox */
+-webkit-animation:myfirst 5s; /* Safari and Chrome */
+-o-animation:myfirst 5s; /* Opera */
+}
+
+@keyframes myfirst
+{
+from {background:red;}
+to {background:yellow;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {background:red;}
+to {background:yellow;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {background:red;}
+to {background:yellow;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {background:red;}
+to {background:yellow;}
+}
+</style>
 </head>
 <body>
- <img src="0.jpeg"/> 
- <h1>静夜思</h1>
-<p>床前明月光</p>
-<p>疑是地上霜</p>
-<p>哈哈哈哈哈</p>
+
+<div></div>
+
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+
 </body>
 </html>
