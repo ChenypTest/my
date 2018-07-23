@@ -129,6 +129,73 @@ html { overflow-y: scroll; }
  {
  	background: url(banner-aa.png) no-repeat;
  }
+	 .content .txt{
+ 	font: bold 24px Georgia;
+ 	text-align: center;
+ 	padding-top: 6px;
+ 	padding-bottom:20px ;
+ 	background: url(img/txt-bg.png) no-repeat bottom center;
+ 	
+ }
+ .content .PL,
+ .content .CS,
+ .content .UC,
+ .omg .sc,
+ .omg .ct,
+ .omg .un
+ {
+ 	width: 300px;
+ 	/*height: 500px;*/
+ 	/*background-color: #bfa;*/
+ 	float: left;
+ }
+ .content .CS{
+ 	margin: 0 20px;
+ }
+ .content .co{
+ 	margin-top:38px ;
+ }
+ .content .h2{
+ 	color: #11719e;
+ 	font: 21px Georgia;
+ }
+ .co .p1{
+ 	color: #8c8c8c;
+ 	font: 12px;
+ }
+ .content .t1{
+ 	width: 299px;
+ 	height: 190px;
+ 	background:url(content-t1-bg.png)  no-repeat;
+ 	margin: 16px 0px 10px 0px;
+ 	text-align: center;
+ 	padding-top: 12px;
+ }
+ .content{
+ 	/*background-color: yellow;*/
+ }
+ .clearfix:before,
+ .clearfix:after{
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+ }
+ .content .p2{
+ 	height: 92px;
+ 	color: #3e3e3e;
+ 	font:13px arial ;
+ }
+.co a{
+ 	display: block;
+ 	width: 163px;
+ 	height: 40px;
+ 	background:url(content-t4.png) no-repeat;
+ 	text-decoration: none;
+ 	color: #016999;
+ 	font: 12px/40px Myriad Pro;
+ 	text-indent: 1em;
+ 	margin-bottom: 33px;
+ }
 		</style>
 	</head>
 	<body>
@@ -191,5 +258,39 @@ html { overflow-y: scroll; }
 			</div>
 		</div>
 		<!--banner结束-->
+		<!--content开始-->
+		<div class="content w clearfix">
+			<h1 class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+			<div class="co">
+				<div class="PL">
+					<h2 class="h2">Perfect Logic</h2>
+					<p class="p1">All you want your website to do.</p>
+					<div class="t1">
+						<img src="content-t1.png" alt="小男孩"/>
+					</div>
+					<p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt</p>
+					<a href="#">Learn More</a>
+				</div>
+				<div class="CS">
+					<h2 class="h2">Complete Solution</h2>
+					<p class="p1">A tool anything and everything you can think</p>
+						<div class="t1">
+						<img src="content-t2.jpg" alt="小男孩"/>
+					</div>
+					<p class="p2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciun tdolore magnam aliquam quaerat voluptatem.</p>
+					<a href="#">Learn More</a>
+				</div>
+				<div class="UC">
+					<h2 class="h2">Uber Culture</h2>
+					<p class="p1">Fresh. Modern and ready for future</p>
+					<div class="t1">
+						<img src="content-t3.jpg" alt="小男孩"/>
+					</div>
+					<p class="p2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+					<a href="#">Learn More</a>
+				</div>
+			</div>
+		</div>
+		<!--content结束-->
 	</body>
 </html>
