@@ -1,77 +1,72 @@
- <html>
-  <head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-      <title>实验</title>
-      <style type="text/css">
-          *{margin:0;padding:0;}/*去掉页面样式*/
-          body{color:white;}
-          .content{
-              background-color:pink;
-             position:absolute;/*绝对定位*/
-             top:50%;
-             left:0;
-             width:100%;
-             height:400px;
-             margin-top:-200px;
-             overflow:hidden;/*隐藏滚动条*/
-         }
-         .main{
-             text-align:center;/*文本居中*/
-             max-width:600px;
-             height:400px;
-             padding:100px 0px;/*上下80px,左右为0*/
-             /*background:yellow;*//*验证div的位置*/
-             margin:0 auto;/*设置上右下左,居中显示*/
-         }
-         .main h1{
-             font-family:"楷体";/*设置字体*/
-             font-size:70px;/*设置字体大小*/
-             font-weight:2px;/*调整字体粗细*/
-         }
-         form{
-             padding:20px 0;
-         }
-         form input{
-             border:1px solid white;
-             display:block;
-             margin:0px auto 10px auto;/*上 右  下 左*/
-             padding:10px;
-             width:220px;
-             border-radius:30px;/*H5设置圆角边框*/
-             font-size:18px;
-             font-weight:300;
-             text-align:center;
-         }
-         form input:hover{
-             background-color:pink;
-         }
-         form button{
-             background-color:yellow;
-             border-radius:10px;
-             border:0;
-             height:30px;
-             width:50px;
-             padding:5px 10px;
-         }
-         form button:hover{
-             background-color:red;
-         }
-     </style>
- </head>
- <body>
- <div class="content">    
-     <div class="main">
-         <h1>Welcome</h1>
-         <form>
-             <input type="text" name="useid" placeholder="请输入账号"/>
-             <input type="password" name="pw" placeholder="请输入密码">
-             <button type="submit">登&nbsp;&nbsp;录</button>
-         </form>
-     </div>
- </div> 
-  <div>
-   <img src="banner.png" alt="这是一个图片"/>
-  </div>
-     
- </body>
- </html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>POLO-360练习</title>
+		<!--引入reset.css用来清除浏览器默认样式-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<!--引入page.css-->
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+	</head>
+	<body>
+		<!--
+			id class和文件的命名规范
+				- 命名的尽量使用英文,如果不会可以使用拼音
+					但是不要英文和拼音混用
+				- 命名格式
+					-驼峰命名法
+						-首字母小写,每个单词的开通字母大写
+							例子:aaaBbbCcc helloWorld
+						-所有的字母都小写,单词之间使用_或-连接
+							aaa_bbb_ccc aaa-bbb-ccc
+			
+		-->
+		<!--创建头部div header-->
+		<!--header开始-->
+		<div class="header w">
+			
+			<!--创建一个导航条-->
+			<ul class="nav">
+				<li>
+					<a href="#">HOME</a>
+					<p>Back to home</p>
+				</li>
+				<li>
+					<a href="#">PRODUCTS</a>
+					<p>What we have for you</p>
+				</li>
+				<li>
+					<a href="#">SERVICES</a>
+					<p>Things we do</p>
+				</li>
+				<li>
+					<a href="#">BLOG</a>
+					<p>Follow our updates</p>
+				</li>
+				<li>
+					<a href="#">CONTACT</a>
+					<p>Ways to reach us</p>
+				</li>
+			</ul>
+			<!--在div中设置logo-->
+			<div class="logo">
+				<a href="#" title="一个非常非常好的网站">
+					<img src="img/logo.png" alt="网站的logo"/>
+				</a>
+			</div>
+		</div>
+		<!--header结束-->
+		<!--banner开始-->
+		<div class="banner w">
+			<img src="img/banner.png" alt="这是一个图片"/>
+			<div class="banner-a">
+				<a href="#"></a>
+				<a class="aa" href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</div>
+		<!--banner结束-->
+	</body>
+</html>
