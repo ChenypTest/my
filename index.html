@@ -3,10 +3,72 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>POLO-360练习</title>
-		<!--引入reset.css用来清除浏览器默认样式-->
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<!--引入page.css-->
-		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		<style type="text/css">
+			body{
+ 	/*设置body的背景图片,水平方向重复*/
+ 	background: url(bd-bg.png) repeat-x;
+ }
+ /*固定元素的宽度和居中*/
+ .w{
+ 	width: 940px;
+ 	margin:0 auto ;
+ }
+ .header{
+ 	/*background-color: #bfa;*/
+ 	/*设置上内边距*/
+ 	padding-top:37px ;
+ 	/*设置下内边距*/
+ 	padding-bottom: 46px;
+ }
+ /*设置logo位置*/
+ .logo{
+ 	margin-left:15px ;
+ }
+ /*
+  
+  * 设置导航条
+  * */
+ .nav{
+ 	float: right;
+ 	margin-top:22px ;
+ }
+ .nav a{
+	color: #666;
+	font: bold 14px Georgia;
+ }
+ .nav li{
+ 	float: left;
+ 	padding:0 10px 10px;
+ 	border-left: dashed 1px #d6d6d6;
+ }
+ .nav li p{
+ 	color: #b7b7b7;
+ 	font: 11px Tahoma;
+ }
+ .banner{
+ 	height: 356px;
+ 	background: url(banner-bg.png) no-repeat bottom center;
+ 	position: relative;
+ }
+ .banner-a{
+ 	position: absolute;
+ 	top: 314px;
+ 	left: 15px;
+ }
+ .banner-a a{
+ 	height: 17px;
+ 	width: 17px;
+ 	float: left;
+ 	margin-left:4px ;
+ 	/*position: absolute;*/
+ 	background: url(banner-a.png) no-repeat;
+ }
+ .banner-a .aa,
+ .banner-a a:hover
+ {
+ 	background: url(banner-aa.png) no-repeat;
+ }
+		</style>
 	</head>
 	<body>
 		<!--
