@@ -134,7 +134,7 @@ html { overflow-y: scroll; }
  	text-align: center;
  	padding-top: 6px;
  	padding-bottom:20px ;
- 	background: url(img/txt-bg.png) no-repeat bottom center;
+ 	background: url(txt-bg.png) no-repeat bottom center;
  	
  }
  .content .PL,
@@ -196,6 +196,161 @@ html { overflow-y: scroll; }
  	text-indent: 1em;
  	margin-bottom: 33px;
  }
+.ct-txt{
+ 	color: #444444;
+ 	font: 18px Georgia;
+ 	padding-bottom:10px ;
+	border-bottom: dashed 1px #d6d6d6;
+	margin-bottom:15px ;
+ }
+ /*设置表弟项*/
+.omg .text{
+	width: 276px;
+	height: 33px;
+	background: url(input.png) no-repeat;
+	/*去除默认边框*/
+	margin-bottom:15px;
+	padding: 0 10px;
+	border: none;
+}
+.omg .tarea{
+	width: 276px;
+	height: 114px;
+	background: url(textarea.png) no-repeat;
+	border: none;
+	overflow: auto;
+	/*设置文本域不能调整大小*/
+	resize: none;
+	padding: 10px 10px 10px 10px;
+}
+.omg .btn{
+	height:32px ;
+	width:163px ;
+	color: #ffffff;
+	font:  13px Georgia;
+	text-align: left;
+	text-indent: 1em;
+	background: url(btn.png) no-repeat;
+	border: none;
+	margin: 11px 0px 23px 0px;
+	padding: 0;
+}
+.omg .omg-bg{
+	margin-bottom: 36px;
+}
+.omg .txt-1{
+	height: 58px;
+	width: 300px;
+	/*background-color: yellow;*/
+	color: #44444;
+	font: 12px/12px ;
+	padding: 0px 0px 9px 0px;
+	border-bottom: dashed 1px #d6d6d6;
+	margin-bottom:14px ;
+}
+.omg .txt-2{
+	height: 58px;
+	width: 300px;
+	/*background-color: yellow;*/
+	color: #44444;
+	font: 12px/12px ;
+	padding: 0px 0px 9px 0px;
+	border-bottom: dashed 1px #d6d6d6;
+}
+.omg .txt-1 img,
+.omg .txt-2 img{
+	float: left;
+	margin-right:10px ;
+}
+.omg .btn-1{
+	height:32px ;
+	width:163px ;
+	color: #ffffff;
+	font:  13px Georgia;
+	text-align: left;
+	text-indent: 1em;
+	background: url(btn.png) no-repeat;
+	border: none;
+	margin: 11px  0px 23px 0px;
+	padding: 0;
+	cursor: pointer;
+}
+.omg .txt-3{
+	color: #444444;
+	font: 12px/12px;
+	margin-bottom:5px ;
+}
+.omg .tp5{
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+.omg .tp5 a{
+	margin-right:2px ;
+}
+.omg .txt-h2{
+	color: #444444;
+	font:bold 18px/18px Gill Sans MT;
+	padding-top: 27px;
+	padding-bottom: 10px;
+	border-bottom: dashed 1px #d6d6d6;;
+	margin-bottom: 16px;
+}
+.omg .b1{
+	height: 99px;
+	width: 300px;
+	margin-top: 15px;
+}
+.omg .btn-2{
+	height:32px ;
+	width:163px ;
+	color: #ffffff;
+	font:  13px Georgia;
+	text-align: left;
+	text-indent: 1em;
+	background: url(btn.png) no-repeat;
+	border: none;
+	margin:14px  0px 23px 0px;
+	padding: 0;
+	/*
+	 
+	 * cursor可以设置鼠标指针的样式
+	 * */
+	cursor: pointer;
+}
+.omg .b1 .text-1{
+	width: 276px;
+	height: 33px;
+	background: url(input.png) no-repeat;
+	padding: 0 10px;
+	border: none;
+}
+.foot{
+	height: 173px;
+	background-color: #333333;
+	border-top:10px solid #4c4c4c;
+}
+.foot a,
+.foot p{
+	color: #999999;
+	font: 11px Myriad Pro;
+	text-decoration: none;
+}
+.foot .copy{
+	float: right;
+}
+.foot .w{
+	padding-top: 18px;
+	}
+.foot p{
+	margin-left: 8px;
+	margin-right: 23px;
+	margin-bottom: 6px;
+}
+.foot a:hover{
+	color: #ccccac;
+	text-decoration: underline;
+}
 		</style>
 	</head>
 	<body>
@@ -292,5 +447,64 @@ html { overflow-y: scroll; }
 			</div>
 		</div>
 		<!--content结束-->
+		<!--contact开始-->
+		<div class="omg w clearfix">
+			<img class="omg-bg" src="content-bg.png"/>
+			<div class="sc">
+				<h2 class="ct-txt">Social Connection</h2>
+				<p class="txt-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+				<div class="tp5">
+					<a href="#"><img src="tp1.png"/></a>
+					<a href="#"><img src="tp2.png"/></a>
+					<a href="#"><img src="tp3.png"/></a>
+					<a href="#"><img src="tp4.png"/></a>
+					<a href="#"><img src="tp5.png"/></a>
+				</div>
+				<h2 class="txt-h2">Newsletter</h2>
+				<p class="txt-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+				<form action="#" class="b1">
+					<input class="text-1" type="text" placeholder="your email address"/>
+					<button class="btn-2">Subscribe</button>
+				</form>
+				
+			</div>
+			<div class="ct">
+				<h2 class="ct-txt">Contact</h2>
+				<form action="#">
+					<input class="text" type="text" placeholder="your name"/>
+					<input class="text" type="text" placeholder="your email address"/>
+					<textarea class="tarea" placeholder="message"></textarea>
+					<button class="btn-1">Send it</button>
+				</form>
+			</div>
+			<div class="nu">
+				<h2 class="ct-txt">News Updates</h2>
+				<p class="txt-1">
+					<img src="contact-t1.jpg"/>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<p class="txt-1">
+					<img src="contact-t2.jpg"/>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+				</p>
+				<p class="txt-2">
+					<img src="contact-t3.jpg"/>
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+				</p>
+				<form action="#"><button class="btn-1">Visit our Blog</button></form>
+			</div>
+		</div>
+		<!--contact结束-->
+		<!--footer开始-->
+		<div class="foot clearfix">
+			<div class="w">
+				<p class="copy">Copyright 2010. Studio VIVROCKS. All Rights Reserved.</p>
+				<p>Site Powered by Wordpress. Design and Developed by VIVROCKS.</p>
+				<p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Products</a> | <a href="#">Services</a> | <a href="#">Contact</a></p>
+				<p><a href="#">Privacy Policy </a>| <a href="#">Terms of use</a></p>
+			</div>
+			
+		</div>
+		<!--footer结束-->
 	</body>
 </html>
