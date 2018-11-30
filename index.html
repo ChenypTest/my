@@ -1,510 +1,77 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>POLO-360练习</title>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<style type="text/css">
-		body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
-dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
-pre, /* text formatting elements 文本格式元素 */
-fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
-th, td { /* table elements 表格元素 */
-    margin: 0;
-    padding: 0;
-}
-
-/* 设置默认字体 */
-body,
-button, input, select, textarea { /* for ie */
-    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
-    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
-}
-
-h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
-h2 { font-size: 16px; }
-h3 { font-size: 14px; }
-h4, h5, h6 { font-size: 100%; }
-
-address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
-code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
-small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
-
-/* 重置列表元素 */
-ul, ol { list-style: none; }
-
-/* 重置文本格式元素 */
-a { text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
-    border-bottom: 1px dotted;
-    cursor: help;
-}
-
-q:before, q:after { content: ''; }
-
-/* 重置表单元素 */
-legend { color: #000; } /* for ie6 */
-fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
-/* 注：optgroup 无法扶正 */
-button, input, select, textarea {
-    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
-}
-
-/* 重置表格元素 */
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* 重置 hr */
-hr {
-    border: none;
-    height: 1px;
-}
-
-/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
-html { overflow-y: scroll; }
-	body{
- 	/*设置body的背景图片,水平方向重复*/
- 	background: url(bd-bg.png) repeat-x;
- }
- /*固定元素的宽度和居中*/
- .w{
- 	width: 940px;
- 	margin:0 auto ;
- }
- .header{
- 	/*background-color: #bfa;*/
- 	/*设置上内边距*/
- 	padding-top:37px ;
- 	/*设置下内边距*/
- 	padding-bottom: 46px;
- }
- /*设置logo位置*/
- .logo{
- 	margin-left:15px ;
- }
- /*
-  
-  * 设置导航条
-  * */
- .nav{
- 	float: right;
- 	margin-top:22px ;
- }
- .nav a{
-	color: #666;
-	font: bold 14px Georgia;
- }
- .nav li{
- 	float: left;
- 	padding:0 10px 10px;
- 	border-left: dashed 1px #d6d6d6;
- }
- .nav li p{
- 	color: #b7b7b7;
- 	font: 11px Tahoma;
- }
- .banner{
- 	height: 356px;
- 	background: url(banner-bg.png) no-repeat bottom center;
- 	position: relative;
- }
- .banner-a{
- 	position: absolute;
- 	top: 314px;
- 	left: 15px;
- }
- .banner-a a{
- 	height: 17px;
- 	width: 17px;
- 	float: left;
- 	margin-left:4px ;
- 	/*position: absolute;*/
- 	background: url(banner-a.png) no-repeat;
- }
- .banner-a .aa,
- .banner-a a:hover
- {
- 	background: url(banner-aa.png) no-repeat;
- }
-	 .content .txt{
- 	font: bold 24px Georgia;
- 	text-align: center;
- 	padding-top: 6px;
- 	padding-bottom:20px ;
- 	background: url(txt-bg.png) no-repeat bottom center;
- 	
- }
- .content .PL,
- .content .CS,
- .content .UC,
- .omg .sc,
- .omg .ct,
- .omg .nu
- {
- 	width: 300px;
- 	/*height: 500px;*/
- 	/*background-color: #bfa;*/
- 	float: left;
- }
- .content .CS{
- 	margin: 0 20px;
- }
- .content .co{
- 	margin-top:38px ;
- }
- .content .h2{
- 	color: #11719e;
- 	font: 21px Georgia;
- }
- .co .p1{
- 	color: #8c8c8c;
- 	font: 12px;
- }
- .content .t1{
- 	width: 299px;
- 	height: 190px;
- 	background:url(content-t1-bg.png)  no-repeat;
- 	margin: 16px 0px 10px 0px;
- 	text-align: center;
- 	padding-top: 12px;
- }
- .content{
- 	/*background-color: yellow;*/
- }
- .clearfix:before,
- .clearfix:after{
- 	content: "";
- 	display: table;
- 	clear: both;
- }
- .content .p2{
- 	height: 92px;
- 	color: #3e3e3e;
- 	font:13px arial ;
- }
-.co a{
- 	display: block;
- 	width: 163px;
- 	height: 40px;
- 	background:url(content-t4.png) no-repeat;
- 	text-decoration: none;
- 	color: #016999;
- 	font: 12px/40px Myriad Pro;
- 	text-indent: 1em;
- 	margin-bottom: 33px;
- }
-.ct-txt{
- 	color: #444444;
- 	font: 18px Georgia;
- 	padding-bottom:10px ;
-	border-bottom: dashed 1px #d6d6d6;
-	margin-bottom:15px ;
- }
- /*设置表弟项*/
-.omg .text{
-	width: 276px;
-	height: 33px;
-	background: url(input.png) no-repeat;
-	/*去除默认边框*/
-	margin-bottom:15px;
-	padding: 0 10px;
-	border: none;
-}
-.omg .tarea{
-	width: 276px;
-	height: 114px;
-	background: url(textarea.png) no-repeat;
-	border: none;
-	overflow: auto;
-	/*设置文本域不能调整大小*/
-	resize: none;
-	padding: 10px 10px 10px 10px;
-}
-.omg .btn{
-	height:32px ;
-	width:163px ;
-	color: #ffffff;
-	font:  13px Georgia;
-	text-align: left;
-	text-indent: 1em;
-	background: url(btn.png) no-repeat;
-	border: none;
-	margin: 11px 0px 23px 0px;
-	padding: 0;
-}
-.omg .omg-bg{
-	margin-bottom: 36px;
-}
-.omg .txt-1{
-	height: 58px;
-	width: 300px;
-	/*background-color: yellow;*/
-	color: #44444;
-	font: 12px/12px ;
-	padding: 0px 0px 9px 0px;
-	border-bottom: dashed 1px #d6d6d6;
-	margin-bottom:14px ;
-}
-.omg .txt-2{
-	height: 58px;
-	width: 300px;
-	/*background-color: yellow;*/
-	color: #44444;
-	font: 12px/12px ;
-	padding: 0px 0px 9px 0px;
-	border-bottom: dashed 1px #d6d6d6;
-}
-.omg .txt-1 img,
-.omg .txt-2 img{
-	float: left;
-	margin-right:10px ;
-}
-.omg .btn-1{
-	height:32px ;
-	width:163px ;
-	color: #ffffff;
-	font:  13px Georgia;
-	text-align: left;
-	text-indent: 1em;
-	background: url(btn.png) no-repeat;
-	border: none;
-	margin: 11px  0px 23px 0px;
-	padding: 0;
-	cursor: pointer;
-}
-.omg .txt-3{
-	color: #444444;
-	font: 12px/12px;
-	margin-bottom:5px ;
-}
-.omg .tp5{
-	margin: 0;
-	padding: 0;
-	font-size: 0;
-}
-.omg .tp5 a{
-	margin-right:2px ;
-}
-.omg .txt-h2{
-	color: #444444;
-	font:bold 18px/18px Gill Sans MT;
-	padding-top: 27px;
-	padding-bottom: 10px;
-	border-bottom: dashed 1px #d6d6d6;;
-	margin-bottom: 16px;
-}
-.omg .b1{
-	height: 99px;
-	width: 300px;
-	margin-top: 15px;
-}
-.omg .btn-2{
-	height:32px ;
-	width:163px ;
-	color: #ffffff;
-	font:  13px Georgia;
-	text-align: left;
-	text-indent: 1em;
-	background: url(btn.png) no-repeat;
-	border: none;
-	margin:14px  0px 23px 0px;
-	padding: 0;
-	/*
-	 
-	 * cursor可以设置鼠标指针的样式
-	 * */
-	cursor: pointer;
-}
-.omg .b1 .text-1{
-	width: 276px;
-	height: 33px;
-	background: url(input.png) no-repeat;
-	padding: 0 10px;
-	border: none;
-}
-.foot{
-	height: 173px;
-	background-color: #333333;
-	border-top:10px solid #4c4c4c;
-}
-.foot a,
-.foot p{
-	color: #999999;
-	font: 11px Myriad Pro;
-	text-decoration: none;
-}
-.foot .copy{
-	float: right;
-}
-.foot .w{
-	padding-top: 18px;
-	}
-.foot p{
-	margin-left: 8px;
-	margin-right: 23px;
-	margin-bottom: 6px;
-}
-.foot a:hover{
-	color: #ccccac;
-	text-decoration: underline;
-}
+			#header{
+				height: 200px;
+				/*background-color: pink;*/
+			}
+			a{
+				text-decoration:none;
+				}
+				a:link{
+				text-decoration:none;
+				}
+				a:visited{
+				text-decoration:none;
+				}
+				a:hover{
+				text-decoration:none;
+				}
+				a:active{
+				text-decoration:none;
+				}
+			h1{
+				font-size: 36px;
+				color: white;
+				text-align: center;
+				line-height:200px;
+			}
+			body{
+				width:100%;
+				background: url(img/背景图片.jpg) no-repeat center top;
+				background-size: 100%;
+			}
+			.w{
+				width: 940px;
+				margin: 0 auto;
+			}
+			ul{
+				position: absolute;
+			}
+			li{
+				float: left;
+				margin: 0 100px;
+			}
+			#abc{
+				margin-left: 50px;
+			}
+			li a{
+				font-size: 16px;
+				color: white;
+				text-decoration:none;
+			}
 		</style>
 	</head>
 	<body>
-		<!--
-			id class和文件的命名规范
-				- 命名的尽量使用英文,如果不会可以使用拼音
-					但是不要英文和拼音混用
-				- 命名格式
-					-驼峰命名法
-						-首字母小写,每个单词的开通字母大写
-							例子:aaaBbbCcc helloWorld
-						-所有的字母都小写,单词之间使用_或-连接
-							aaa_bbb_ccc aaa-bbb-ccc
-			
-		-->
-		<!--创建头部div header-->
-		<!--header开始-->
-		<div class="header w">
-			
-			<!--创建一个导航条-->
-			<ul class="nav">
-				<li>
-					<a href="#">HOME</a>
-					<p>Back to home</p>
-				</li>
-				<li>
-					<a href="#">PRODUCTS</a>
-					<p>What we have for you</p>
-				</li>
-				<li>
-					<a href="#">SERVICES</a>
-					<p>Things we do</p>
-				</li>
-				<li>
-					<a href="#">BLOG</a>
-					<p>Follow our updates</p>
-				</li>
-				<li>
-					<a href="#">CONTACT</a>
-					<p>Ways to reach us</p>
-				</li>
+		<div id="bigger">
+			<div id="header">
+			<h1><a href="#">我的个人网站</a></h1>
+		</div>
+		<div class="w">
+			<div id="main">
+			<ul>
+				<li id="abc"><a href="https://xf.0ady.info/" target="_blank">主页</a></li>
+				<li><a href="https://www.151ku.com/ " target="_blank">相册</a></li>
+				<li><a href="https://www.467nn.com/" target="_blank">视频</a></li>
+				<li><a href="https://www.551an.com/" target="_blank">链接</a></li>
+				<li><a href="https://www.551an.com/" target="_blank">联系我们</a></li>
 			</ul>
-			<!--在div中设置logo-->
-			<div class="logo">
-				<a href="#" title="一个非常非常好的网站">
-					<img src="logo.png" alt="网站的logo"/>
-				</a>
-			</div>
 		</div>
-		<!--header结束-->
-		<!--banner开始-->
-		<div class="banner w">
-			<img src="banner.png" alt="这是一个图片"/>
-			<div class="banner-a">
-				<a href="#"></a>
-				<a class="aa" href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-			</div>
 		</div>
-		<!--banner结束-->
-		<!--content开始-->
-		<div class="content w clearfix">
-			<h1 class="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
-			<div class="co">
-				<div class="PL">
-					<h2 class="h2">Perfect Logic</h2>
-					<p class="p1">All you want your website to do.</p>
-					<div class="t1">
-						<img src="content-t1.png" alt="小男孩"/>
-					</div>
-					<p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt</p>
-					<a href="#">Learn More</a>
-				</div>
-				<div class="CS">
-					<h2 class="h2">Complete Solution</h2>
-					<p class="p1">A tool anything and everything you can think</p>
-						<div class="t1">
-						<img src="content-t2.jpg" alt="小男孩"/>
-					</div>
-					<p class="p2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciun tdolore magnam aliquam quaerat voluptatem.</p>
-					<a href="#">Learn More</a>
-				</div>
-				<div class="UC">
-					<h2 class="h2">Uber Culture</h2>
-					<p class="p1">Fresh. Modern and ready for future</p>
-					<div class="t1">
-						<img src="content-t3.jpg" alt="小男孩"/>
-					</div>
-					<p class="p2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-					<a href="#">Learn More</a>
-				</div>
-			</div>
 		</div>
-		<!--content结束-->
-		<!--contact开始-->
-		<div class="omg w clearfix">
-			<img class="omg-bg" src="content-bg.png"/>
-			<div class="sc">
-				<h2 class="ct-txt">Social Connection</h2>
-				<p class="txt-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-				<div class="tp5">
-					<a href="#"><img src="tp1.png"/></a>
-					<a href="#"><img src="tp2.png"/></a>
-					<a href="#"><img src="tp3.png"/></a>
-					<a href="#"><img src="tp4.png"/></a>
-					<a href="#"><img src="tp5.png"/></a>
-				</div>
-				<h2 class="txt-h2">Newsletter</h2>
-				<p class="txt-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-				<form action="#" class="b1">
-					<input class="text-1" type="text" placeholder="your email address"/>
-					<button class="btn-2">Subscribe</button>
-				</form>
-				
-			</div>
-			<div class="ct">
-				<h2 class="ct-txt">Contact</h2>
-				<form action="#">
-					<input class="text" type="text" placeholder="your name"/>
-					<input class="text" type="text" placeholder="your email address"/>
-					<textarea class="tarea" placeholder="message"></textarea>
-					<button class="btn-1">Send it</button>
-				</form>
-			</div>
-			<div class="nu">
-				<h2 class="ct-txt">News Updates</h2>
-				<p class="txt-1">
-					<img src="contact-t1.jpg"/>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-				<p class="txt-1">
-					<img src="contact-t2.jpg"/>
-					Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-				</p>
-				<p class="txt-2">
-					<img src="contact-t3.jpg"/>
-					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-				</p>
-				<form action="#"><button class="btn-1">Visit our Blog</button></form>
-			</div>
-		</div>
-		<!--contact结束-->
-		<!--footer开始-->
-		<div class="foot clearfix">
-			<div class="w">
-				<p class="copy">Copyright 2010. Studio VIVROCKS. All Rights Reserved.</p>
-				<p>Site Powered by Wordpress. Design and Developed by VIVROCKS.</p>
-				<p><a href="#">Home</a> | <a href="#">About</a> | <a href="#">Products</a> | <a href="#">Services</a> | <a href="#">Contact</a></p>
-				<p><a href="#">Privacy Policy </a>| <a href="#">Terms of use</a></p>
-			</div>
-			
-		</div>
-		<!--footer结束-->
 	</body>
 </html>
